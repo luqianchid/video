@@ -1,0 +1,217 @@
+$themeColor: #3a537e;
+html,
+body,
+#app {
+  height: 100%;
+  color: #000;
+}
+h1{
+//   font-size: normal!important;
+  color:#fff;  
+  height:45px;
+  line-height: 45px;
+  font-size: 39px;
+  font-weight:normal;
+}
+#home {height: 100%}
+h3{
+  width:100%;
+  height:45px;
+  line-height: 45px;
+  font-size: 16px;
+  color:#fff;
+  padding-left:20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgb(37,41,43);
+}
+.href{
+  color:#fff;
+}
+#sidebar{
+  width:300px;
+  height:100%;
+  position: fixed;
+  border-right: 1px solid rgba(255, 255, 255, 0.11);
+  .el-aside{
+    background: rgb(31, 35, 37);
+    height:100%;
+  }
+}
+// 视频列表公用
+.video-list{
+  width:96%;
+  margin-left:2%;
+  margin-top:20px;
+  display:inline-block;
+  .video-item{
+    width:170px;
+    float:left;
+    background-color: #050505;
+    margin:15px;
+    overflow: hidden;
+    position: relative;
+  }  
+  .cover-url{
+    display:block;
+    width:100%;
+    height:250px;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  .video-item:hover .cover-url{
+    opacity: 1;
+    transform: scale(1.2); 
+  }
+  .mask{
+    position: absolute;
+    width:100%;
+    height:250px;
+    left:0;
+    top:0;
+    background:rgba(0,0,0,.3);
+    display: none;
+    transition: opacity 0.1s;
+    .mask-title {
+      color: #fff;
+      font-size: 17px;
+      padding-left: 10px;
+    }
+    .mask-date {
+      font-size: 12px;
+      color: #eee;
+      padding-left: 10px;
+    }
+    .el-icon-caret-right {
+      font-size: 50px;
+      /* display: block; */
+      color: #B0DDEF;
+      background: rgba(0, 0, 0, 0.78);
+      border-radius: 50%;
+      border:1px solid #fff;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+    .el-icon-info {
+      color: #B0DDEF;
+      position: absolute;
+      font-size:21px;
+      right: 10px;
+      bottom: 10px;
+    }
+  }
+  .video-item:hover .mask{
+    display: block;
+  }
+  .video-cover{
+    width:100%;
+    height:100%;
+  }
+  .video-title{
+    color:#fff;
+    text-align: center;    
+    display: block;  
+  }
+  .lastpoint{
+    color:#fff;
+    padding-left: 10px;
+  }
+  .el-progress{
+    text-align: center;    
+    .el-progress__text{
+      color:#fff;
+    }
+    
+  }
+}
+// 视频栏目公用
+.videos{
+  width:100%;
+  .cont-header{
+    display:flex;
+    height:130px;
+    min-width:600px;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+    .head-left{
+      width: 300px;
+      height: 120px;     
+      display: flex;      
+      flex-wrap: wrap;
+      position: relative;
+      padding-top: 10px;       
+      .search{
+        width:100%;
+        height:30px;
+      }
+    }
+    .head-right {
+      right: 30px;
+      position: relative;
+      height: 120px;
+      line-height: 120px;
+      text-align: right;
+      flex: 1;
+      .el-button{
+        margin-right:30px;
+      }
+    }
+  }
+}
+// 侧边导航部分公用
+.notify{
+  width:100%;
+  height:100%;
+  padding-top:15px;
+  .notify-header {
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,.15);    
+  }
+  .intro {
+    color: #fff;
+    padding: 0 20px 0 0;
+    margin:10.5px 0 10.5px 0;
+    font-weight: 300;
+    font-size: 15px;
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+}
+// 效果不好的样式
+.el-input--prefix .el-input__inner {
+  padding-left: 30px;
+  height: 30px;
+  background-color: #565656;
+}
+.el-input__icon{
+  line-height: 30px!important;
+}
+.el-table th{
+  padding:0!important;
+  height:34px;
+}
+.el-input__inner {
+  color:#fff!important; 
+  background-color: #565656!important; 
+}
+.el-menu-item .is-active{
+  border-bottom-color: none!important;
+}
+.el-menu-item:hover{
+  background:rgba(255,255,255,.15)!important;
+}
+.el-menu.el-menu--horizontal, .el-menu--horizontal>.el-menu-item.is-active{
+  border-bottom: none!important;
+}
+.el-menu{
+  border-right:none!important;
+}
+.el-table td, .el-table th.is-leaf {
+  border-bottom: 1px solid rgba(255,255,255,.12)!important;
+}
+.el-table__body, .el-table tr {
+  background-color: #3d3d3d!important;
+}
+.el-table__body tr.hover-row>td {
+  background-color: #4d4d4d!important;
+}
